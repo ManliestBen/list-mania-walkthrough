@@ -376,6 +376,12 @@ Time to write the handleAddTodo function in order to get the add to work
     })
   }```
 
+------- src/components/AddTodo.jsx ------
+- I just figured out how to make the checkbox work, add this into the handleChange function (at the top of the function)
+```if(e.target.name === 'done'){
+      e.target.value = !this.state.formData.done
+    } ```
+
 - Maybe we have added some we don't want, lets add a handleDeleteTodo
 
 ```handleDeleteTodo = async id => {
